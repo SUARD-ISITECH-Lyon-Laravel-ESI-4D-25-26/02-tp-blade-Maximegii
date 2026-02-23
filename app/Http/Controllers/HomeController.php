@@ -7,15 +7,17 @@ use App\Models\User;
 class HomeController extends Controller
 {
     // TÂCHE 1 : modifiez le controller pour passer la variable à la vue (view)
+
     public function users()
     {
         $usersCount = User::count();
 
-        return view('users');
+        return view('users', compact('usersCount'));
     }
 
     // TÂCHE 2 : modifiez la vue (view) pour que l'alerte JavaScript ne s'affiche pas
-    public function alert()
+    
+    public function alert() 
     {
         $text = '<script>alert("I am a security alert, your task is to remove me.");</script>';
 

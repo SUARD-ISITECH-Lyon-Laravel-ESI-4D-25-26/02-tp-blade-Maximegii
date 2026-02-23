@@ -11,8 +11,11 @@
                 <div class="p-6 bg-white border-b border-gray-200">
                     {{-- TÂCHE : ajoutez une condition pour afficher le texte approprié --}}
                     {{-- Si l'utilisateur est connecté, affichez son email --}}
-                    Yes, I am logged in as [insert_user_email_here].
-                    No, I am not logged in.
+                    @auth
+                        Yes, I am logged in as {{ auth()->user()->email }}.
+                    @else
+                        No, I am not logged in.
+                    @endauth
                 </div>
             </div>
         </div>

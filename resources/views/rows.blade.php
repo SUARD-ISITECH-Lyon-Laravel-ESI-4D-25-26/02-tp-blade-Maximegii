@@ -21,11 +21,15 @@
                         <tbody>
                             @foreach ($users as $user)
                                 {{-- TÂCHE : seules les lignes paires (2e, 4e, etc.) doivent avoir la classe CSS "bg-red-100" --}}
-                                <tr class="bg-red-100">
-                                    <td>{{-- TÂCHE : ajoutez ici le numéro de ligne : 1, 2, etc. --}}</td>
+                                <tr @if($loop->even) class="bg-red-100" @endif>
+                                    <td>{{ $loop->iteration }}</td>
                                     <td>{{ $user->name }}</td>
                                     {{-- TÂCHE : seule la PREMIÈRE ligne doit avoir l'email avec la classe "font-bold" --}}
-                                    <td class="font-bold">{{ $user->email }}</td>
+                                    @if($loop->first)
+                                        <td class="font-bold">{{ $user->email }}</td>
+                                    @else
+                                        <td>{{ $user->email }}</td>
+                                    @endif
                                     <td>{{ $user->created_at }}</td>
                                 </tr>
                             @endforeach
