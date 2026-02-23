@@ -1,0 +1,84 @@
+{
+  "tests": [
+    {
+      "name": "Run PHPUnit tests",
+      "setup": "",
+      "run": "vendor/bin/phpunit --testdox --filter=test_users_list_get_with_values",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Run PHPUnit tests",
+      "setup": "",
+      "run": "vendor/bin/phpunit --testdox --filter=test_script_alert_does_not_fire_modal",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Run PHPUnit tests",
+      "setup": "",
+      "run": "vendor/bin/phpunit --testdox --filter=test_loop_shows_table_or_empty",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Run PHPUnit tests",
+      "setup": "",
+      "run": "vendor/bin/phpunit --testdox --filter=test_rows_styled_with_number",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Run PHPUnit tests",
+      "setup": "",
+      "run": "vendor/bin/phpunit --testdox --filter=test_authenticated",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Run PHPUnit tests",
+      "setup": "",
+      "run": "vendor/bin/phpunit --testdox --filter=test_include_row",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Run PHPUnit tests",
+      "setup": "",
+      "run": "vendor/bin/phpunit --testdox --filter=test_meta_title",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Run PHPUnit tests",
+      "setup": "",
+      "run": "vendor/bin/phpunit --testdox --filter=test_layout",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}
